@@ -42,6 +42,12 @@ The solution consists of several components:
    - Demonstration of the mapping workflow
    - Performance benchmarking utilities
 
+4. **Lim.Npp.Plugin** (Notepad++ Plugin)
+   - Interactive text compression/decompression directly in Notepad++
+   - Keyboard shortcuts: Ctrl+Alt+L (compress), Ctrl+Alt+M (decompress)
+   - Real-time demonstration of LIM's compression capabilities
+   - Configurable limits for selection length and line count
+
 ## How It Works
 
 ### Compression Process
@@ -92,6 +98,8 @@ The project uses Directed Acyclic Word Graphs for efficient string matching:
 
 ### Basic Usage
 
+#### Command Line
+
 ```bash
 ConsoleApplication1.exe <input_file> [separator_type]
 ```
@@ -108,6 +116,20 @@ ConsoleApplication1.exe <input_file> [separator_type]
 - `<filename>_short.log` - Compressed version
 - `<filename>_map.log` - Mapping dictionary (token,original_word pairs)
 - `<filename>_new.log` - Decompressed file (verification)
+
+#### Notepad++ Plugin
+
+1. Copy `Lim.Npp.Plugin.dll` to your Notepad++ plugins directory
+2. Restart Notepad++
+3. Select text you want to compress
+4. Press **Ctrl+Alt+L** to compress selected text
+5. Press **Ctrl+Alt+M** to decompress selected text
+
+The plugin provides immediate visual feedback of compression effectiveness, making it perfect for:
+- Testing compression on sample data
+- Demonstrating LIM to others
+- Quick compression of text snippets
+- Learning how the mapping works
 
 ### Programmatic Usage
 
