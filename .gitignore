@@ -1,24 +1,32 @@
-# Prerequisites
-*.d
+# Visual Studio
+*.suo
+*.user
+*.sdf
+*.opensdf
+.vs/
+*.aps
+*.ncb
+*.opendb
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+ipch/
 
 # Precompiled Headers
-*.gch
 *.pch
 
 # Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
 
 # Compiled Static libraries
 *.lai
@@ -30,3 +38,26 @@
 *.exe
 *.out
 *.app
+
+# VS profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# TFS
+$tf/
+
+# Old SVN metadata
+.svn/
+
+# Test/temp files
+*_org.log
+*_short.log
+*_map.log
+*_new.log
+dic.txt
+dic1.txt
+lex.txt
+res.txt
+Output/
